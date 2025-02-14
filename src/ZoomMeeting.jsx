@@ -8,7 +8,9 @@ const ZoomMeeting = () => {
   const createMeeting = async () => {
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:5000/create-meeting");
+      const response = await axios.post(
+        "https://zoom-meeting-chcuaz9tr-siamwds-projects.vercel.app/create-meeting"
+      );
       setMeetingUrl(response.data.join_url);
     } catch (error) {
       console.error("Error creating Zoom meeting:", error);
