@@ -9,7 +9,7 @@ const ZoomMeeting = () => {
     setLoading(true);
     try {
       const response = await axios.post(
-        "https://zoom-meeting-chcuaz9tr-siamwds-projects.vercel.app/create-meeting"
+        "https://zoom-meeting-iota.vercel.app/create-meeting"
       );
       setMeetingUrl(response.data.join_url);
     } catch (error) {
